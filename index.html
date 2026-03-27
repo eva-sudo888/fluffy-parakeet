@@ -1,140 +1,604 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Как убрать тягу к сладкому | Longrich</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как убрать тягу к сладкому и начать худеть без диет за 7-14 дней</title>
+    <meta name="description" content="Без силы воли, без срывов и без готовки отдельно. Система восстановления метаболизма Longrich.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #E17B5C;
+            --primary-dark: #C86648;
+            --secondary: #7FB69E;
+            --bg-light: #FFF9F5;
+            --bg-white: #FFFFFF;
+            --text-dark: #2C2C2C;
+            --text-medium: #5A5A5A;
+            --text-light: #8A8A8A;
+            --accent-peach: #FFE5D9;
+            --accent-mint: #E8F4EF;
+        }
 
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #FFF9F5;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            background: var(--bg-light);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
 
-.hero {
-    padding: 60px 20px;
-    background: linear-gradient(135deg,#fff,#ffe5d9,#e8f4ef);
-}
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
 
-h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.5rem;
+        }
 
-p {
-    font-size: 18px;
-}
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            margin-bottom: 1.25rem;
+        }
 
-.btn {
-    display: inline-block;
-    background: #E17B5C;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 10px;
-}
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 1rem;
+        }
 
-.form-box {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 20px;
-}
+        p {
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+        }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-}
+        strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
 
-.section {
-    padding: 50px 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
 
-.box {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-</style>
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--bg-white) 0%, var(--accent-peach) 100%);
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--bg-white) 0%, var(--accent-peach) 50%, var(--accent-mint) 100%);
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(225, 123, 92, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(127, 182, 158, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            color: var(--text-dark);
+            line-height: 1.3;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+            color: var(--text-medium);
+            margin: 2rem 0;
+            line-height: 1.6;
+        }
+
+        /* Quick Capture Form */
+        .quick-form {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .quick-form p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .form-row input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #E5E5E5;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .form-row input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 10px 30px rgba(225, 123, 92, 0.3);
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(225, 123, 92, 0.4);
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+        }
+
+        .section-alt {
+            background: var(--bg-white);
+        }
+
+        /* Pain Amplification */
+        .pain-box {
+            background: linear-gradient(135deg, #FFE5E5 0%, var(--bg-white) 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .pain-box ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .pain-box li {
+            padding: 0.5rem 0 0.5rem 2rem;
+            position: relative;
+        }
+
+        .pain-box li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Explanation Box */
+        .explain-box {
+            background: linear-gradient(135deg, var(--accent-mint) 0%, var(--bg-white) 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--secondary);
+        }
+
+        /* Result Box */
+        .result-box {
+            background: linear-gradient(135deg, var(--accent-peach) 0%, var(--bg-white) 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+        }
+
+        /* Meaning Box */
+        .meaning-box {
+            background: #E8F4EF;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .meaning-box p {
+            margin-bottom: 8px;
+        }
+
+        /* Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .pricing-card {
+            background: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .pricing-card.featured {
+            border: 3px solid var(--primary);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .pricing-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+
+        .pricing-price small {
+            font-size: 1rem;
+            color: var(--text-medium);
+            font-weight: 400;
+        }
+
+        .pricing-comparison {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #F0F0F0;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            margin-top: 1rem;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+            display: block;
+        }
+
+        .whatsapp-btn:hover {
+            background: #20BA5A;
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        footer p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="hero">
-<div class="container">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Система Longrich</div>
+        </div>
+    </header>
 
-<h1>Как убрать тягу к сладкому и начать худеть без диет за 7–14 дней</h1>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Как убрать тягу к сладкому и начать худеть без диет за 7-14 дней</h1>
+                
+                <div class="hero-subtitle">
+                    <p><strong>Без силы воли. Без срывов. Без готовки отдельно.</strong></p>
+                    <p>Я покажу, как запустить организм, чтобы он сам перестал требовать еду по вечерам.</p>
+                </div>
+                
+                <div class="quick-form">
+                    <p><strong>Оставь заявку — я разберу твою ситуацию</strong></p>
+                    <form id="hero-form">
+                        <div class="form-row">
+                            <input type="text" name="name" placeholder="Имя" required>
+                            <input type="tel" name="phone" placeholder="WhatsApp" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Получить разбор →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<p><strong>Без силы воли. Без срывов. Без отдельной готовки.</strong></p>
-<p>Меня зовут Нурипа. Я покажу, как запустить организм, чтобы он сам перестал требовать еду по вечерам.</p>
+    <!-- Pain Amplification -->
+    <section>
+        <div class="container">
+            <h2>Время 22:00. Ты идеально держалась весь день. А сейчас руки сами тянутся к холодильнику.</h2>
+            
+            <div class="pain-box">
+                <p>Знакомо?</p>
+                <ul>
+                    <li>Ты весь день стараешься. Не переедаешь. Пьёшь воду. Ограничиваешь сладкое.</li>
+                    <li>А к вечеру <strong>накрывает</strong>. Мозг буквально кричит: <em>"Дай шоколадку! Срочно!"</em></li>
+                    <li>Руки сами идут к шкафчику. Ты ешь. Потом ругаешь себя.</li>
+                    <li>И думаешь: <em>"Ну почему у меня нет силы воли…"</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<div class="form-box">
-<p><strong>Оставь заявку — я разберу твою ситуацию</strong></p>
-<input type="text" placeholder="Имя">
-<input type="tel" placeholder="WhatsApp">
-<a href="https://wa.me/77022645778" class="btn">Получить разбор моей ситуации →</a>
-<p style="font-size:14px;">Обычно отвечаю в течение 15–30 минут</p>
-</div>
+    <!-- Explanation -->
+    <section class="section-alt">
+        <div class="container">
+            <h2>А теперь я скажу тебе то, что изменило всё.</h2>
+            
+            <div class="explain-box">
+                <p><strong>Это не ты слабая.</strong></p>
+                
+                <p>Вечерний срыв — это не твоя вина. Это <strong>жёсткий биохимический приказ</strong> твоего организма.</p>
+                
+                <p>В твоём кишечнике живут <strong>патогенные бактерии</strong>. Они питаются сахаром. И когда им нужна еда — они <strong>посылают сигналы в мозг</strong>: <em>"Корми нас! Срочно!"</em></p>
+                
+                <p>Мозг думает, что тебе срочно нужна энергия. И ты идёшь к холодильнику.</p>
+                
+                <p><strong>Ты не виновата.</strong> Просто в твоём кишечнике <strong>дисбаланс</strong>. Плохих бактерий больше, чем хороших.</p>
+            </div>
+        </div>
+    </section>
 
-</div>
-</div>
+    <!-- My Result -->
+    <section>
+        <div class="container">
+            <h2>Когда я это поняла — всё изменилось.</h2>
+            
+            <div class="result-box">
+                <p>Я <strong>не села на диету</strong>. Я <strong>не стала считать калории</strong>. Я <strong>не стала терпеть голод</strong>.</p>
+                
+                <p>Я просто <strong>восстановила баланс</strong> в кишечнике. И организм сам начал делать остальное.</p>
+                
+                <h3 style="margin-top: 2rem;">Моя история с цифрами:</h3>
+                
+                <p>Я начала пить систему <strong>15 марта 2025 года</strong>. Первые 5 дней ничего особенного не чувствовала.</p>
+                
+                <p>На <strong>7-й день</strong> проснулась — и живот плоский. Вздутие ушло полностью.</p>
+                
+                <p>Через <strong>2 недели</strong> я поймала себя на мысли: я не думаю о еде постоянно. Раньше к 10 вечера всегда шла к холодильнику. Теперь — просто не хочется.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">-6 кг</span>
+                        <span class="stat-label">за первый месяц</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">-8 см</span>
+                        <span class="stat-label">в талии</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">срывов на сладкое</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="meaning-box">
+                <p><strong>Что это значит для тебя:</strong></p>
+                <p>→ Ты перестаёшь срываться вечером</p>
+                <p>→ Вес начинает уходить сам</p>
+                <p>→ Ты не живёшь в постоянной борьбе с собой</p>
+            </div>
+        </div>
+    </section>
 
-<div class="section">
-<div class="container">
+    <!-- Offer -->
+    <section class="section-alt">
+        <div class="container">
+            <h2>Выбери свой курс</h2>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-title">Пробный курс</div>
+                    <div class="pricing-price">15,000₸<br><small>за 2 недели</small></div>
+                    <div class="pricing-comparison">750₸ в день</div>
+                    <ul class="pricing-features">
+                        <li>14 пакетиков пробиотика</li>
+                        <li>14 пакетиков пребиотика</li>
+                        <li>Бонус: Конструктор ужинов</li>
+                        <li>Бонус: Чемоданчик скорой помощи</li>
+                        <li>Доступ в чат на 14 дней</li>
+                    </ul>
+                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20пробный%20курс" class="btn btn-primary">Начать с пробного</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Популярный</div>
+                    <div class="pricing-title">Полный курс</div>
+                    <div class="pricing-price">25,000₸<br><small>за месяц</small></div>
+                    <div class="pricing-comparison">833₸ в день</div>
+                    <ul class="pricing-features">
+                        <li>30 пакетиков пробиотика</li>
+                        <li>30 пакетиков пребиотика</li>
+                        <li>Все 3 бонуса</li>
+                        <li>Закрытый чат на 30 дней</li>
+                        <li>Личное ведение от меня</li>
+                    </ul>
+                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20полный%20курс" class="btn btn-primary">Забронировать курс</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-title">Интенсив</div>
+                    <div class="pricing-price">45,000₸<br><small>за 2 месяца</small></div>
+                    <div class="pricing-comparison">Экономия 5,000₸</div>
+                    <ul class="pricing-features">
+                        <li>60 пакетиков пробиотика</li>
+                        <li>60 пакетиков пребиотика</li>
+                        <li>Все 3 бонуса</li>
+                        <li>Закрытый чат на 60 дней</li>
+                        <li>Приоритетная поддержка</li>
+                    </ul>
+                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20интенсив" class="btn btn-primary">Получить интенсив</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>Знакомо?</h2>
+    <!-- WhatsApp CTA -->
+    <section>
+        <div class="container" style="text-align: center;">
+            <h2>Остались вопросы?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem;">Напиши мне в WhatsApp — я отвечу в течение часа и разберу твою ситуацию.</p>
+            <a href="https://wa.me/77022645778" class="btn whatsapp-btn" style="max-width: 400px; margin: 0 auto;">Написать в WhatsApp →</a>
+        </div>
+    </section>
 
-<div class="box">
-<p>Ты держишься весь день…</p>
-<p>А вечером снова холодильник.</p>
-<p><strong>И думаешь — у меня нет силы воли.</strong></p>
-</div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Продукт не является лекарственным средством (БАД). Эффект зависит от индивидуальных особенностей.</p>
+            <p>© 2026 Система Longrich. Все права защищены.</p>
+        </div>
+    </footer>
 
-</div>
-</div>
-
-<div class="section" style="background:#fff;">
-<div class="container">
-
-<h2>Это не ты</h2>
-
-<div class="box">
-<p>Это биохимия.</p>
-<p>Дисбаланс бактерий заставляет тебя хотеть сахар.</p>
-</div>
-
-</div>
-</div>
-
-<div class="section">
-<div class="container">
-
-<h2>Что изменится</h2>
-
-<div class="box">
-<p>→ Перестанешь срываться</p>
-<p>→ Вес начнёт уходить</p>
-<p>→ Пропадёт постоянный голод</p>
-</div>
-
-<div class="form-box">
-<p><strong>Хочешь так же?</strong></p>
-<a href="https://wa.me/77022645778" class="btn">Написать в WhatsApp →</a>
-</div>
-
-</div>
-</div>
+    <script>
+        // Form handling
+        document.getElementById('hero-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const message = `Привет! Меня зовут ${name}. Хочу получить разбор моей ситуации.`;
+            window.location.href = `https://wa.me/77022645778?text=${encodeURIComponent(message)}`;
+        });
+    </script>
 
 </body>
 </html>
