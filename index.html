@@ -430,17 +430,6 @@
                     <p><strong>Без силы воли. Без срывов. Без готовки отдельно.</strong></p>
                     <p>Я покажу, как запустить организм, чтобы он сам перестал требовать еду по вечерам.</p>
                 </div>
-                
-                <div class="quick-form">
-                    <p><strong>Оставь заявку — я разберу твою ситуацию</strong></p>
-                    <form id="hero-form">
-                        <div class="form-row">
-                            <input type="text" name="name" placeholder="Имя" required>
-                            <input type="tel" name="phone" placeholder="WhatsApp" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Получить разбор →</button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
@@ -500,21 +489,6 @@
                 <p>На <strong>7-й день</strong> я заметила первое изменение: ушла тяжесть после еды. Знаете это чувство, когда к вечеру живот как надутый шарик? Вот оно пропало. Появилась легкость.</p>
                 
                 <p>Через <strong>2 недели</strong> я поймала себя на мысли: я не думаю о еде постоянно. Раньше к 10 вечера всегда шла к холодильнику за порцией "успокоительного" в виде еды. Теперь — просто не хочется.</p>
-                
-                <div class="stats">
-                    <div class="stat-item">
-                        <span class="stat-number">-6 кг</span>
-                        <span class="stat-label">за первый месяц</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">-8 см</span>
-                        <span class="stat-label">в талии</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">0</span>
-                        <span class="stat-label">срывов на сладкое</span>
-                    </div>
-                </div>
             </div>
             
             <div class="meaning-box">
@@ -583,6 +557,22 @@
                     <p>Видимое снижение объёмов. Одежда сидит свободнее. Энергия на весь день <strong>без кофе</strong>. Ты смотришь в зеркало — и видишь изменения.</p>
                     <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);"><em>Обычно так. Если на 5-й день не почувствовала лёгкость — пиши мне, разберёмся.</em></p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form -->
+    <section style="background: var(--bg-light); padding: 4rem 0;">
+        <div class="container">
+            <div style="background: white; padding: 40px; border-radius: 20px; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                <h2 style="text-align: center; margin-bottom: 1rem; font-size: clamp(1.75rem, 4vw, 2.25rem);">Оставь заявку — я разберу твою ситуацию</h2>
+                <form id="middle-form" style="margin-top: 2rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+                        <input type="text" name="name" placeholder="Имя" required style="width: 100%; padding: 14px; border: 2px solid #E5E5E5; border-radius: 10px; font-size: 1rem; font-family: 'Montserrat', sans-serif;">
+                        <input type="tel" name="phone" placeholder="WhatsApp" required style="width: 100%; padding: 14px; border: 2px solid #E5E5E5; border-radius: 10px; font-size: 1rem; font-family: 'Montserrat', sans-serif;">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Получить разбор →</button>
+                </form>
             </div>
         </div>
     </section>
@@ -798,7 +788,7 @@
 
     <script>
         // Form handling
-        document.getElementById('hero-form').addEventListener('submit', function(e) {
+        document.getElementById('middle-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(e.target);
             const name = formData.get('name');
