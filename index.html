@@ -28,6 +28,22 @@
             box-sizing: border-box;
         }
 
+        /* Защита от копирования */
+        body {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        /* Разрешаем выделение только в полях ввода */
+        input, textarea {
+            user-select: text;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+        }
+
         body {
             font-family: 'Montserrat', sans-serif;
             color: var(--text-dark);
@@ -747,6 +763,64 @@
             const phone = formData.get('phone');
             const message = `Привет! Меня зовут ${name}. Хочу получить разбор моей ситуации.`;
             window.location.href = `https://wa.me/77022645778?text=${encodeURIComponent(message)}`;
+        });
+
+        // Защита контента от копирования
+        // Блокировка правого клика
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Блокировка выделения текста
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Блокировка копирования через CSS также добавлена в стили
+        document.body.style.userSelect = 'none';
+        document.body.style.webkitUserSelect = 'none';
+        document.body.style.mozUserSelect = 'none';
+        document.body.style.msUserSelect = 'none';
+
+        // Блокировка горячих клавиш
+        document.addEventListener('keydown', function(e) {
+            // Ctrl+C (копирование)
+            if (e.ctrlKey && e.keyCode === 67) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+U (просмотр кода)
+            if (e.ctrlKey && e.keyCode === 85) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+S (сохранение)
+            if (e.ctrlKey && e.keyCode === 83) {
+                e.preventDefault();
+                return false;
+            }
+            // F12 (консоль разработчика)
+            if (e.keyCode === 123) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+I (консоль)
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+J (консоль)
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+C (инспектор элементов)
+            if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
+                e.preventDefault();
+                return false;
+            }
         });
     </script>
 
