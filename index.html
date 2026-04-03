@@ -1,828 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Как убрать тягу к сладкому и начать худеть без диет за 7-14 дней</title>
-    <meta name="description" content="Без силы воли, без срывов и без готовки отдельно. Система восстановления метаболизма Longrich.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #E17B5C;
-            --primary-dark: #C86648;
-            --secondary: #7FB69E;
-            --bg-light: #FFF9F5;
-            --bg-white: #FFFFFF;
-            --text-dark: #2C2C2C;
-            --text-medium: #5A5A5A;
-            --text-light: #8A8A8A;
-            --accent-peach: #FFE5D9;
-            --accent-mint: #E8F4EF;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Пробиотик + Пребиотик Longrich — Состав и схема приёма</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F3EE;
+    --text: #1A1A1A;
+    --text-mid: #3D3D3D;
+    --text-soft: #6B6560;
+    --pro: #2E6DB4;
+    --pro-bg: #EDF3FA;
+    --pre: #2D8B55;
+    --pre-bg: #EBF5EF;
+    --warm: #E8A33D;
+    --warm-bg: #FFF6E6;
+    --danger: #C45C4A;
+    --card: #FFFFFF;
+    --border: rgba(0,0,0,0.06);
+    --shadow-md: 0 4px 24px rgba(0,0,0,0.07);
+    --r: 20px;
+    --r-sm: 14px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  .page { max-width: 480px; margin: 0 auto; padding: 0 20px 40px; }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  /* HERO */
+  .hero { padding: 44px 0 0; }
+  .hero h1 { font-size: 28px; font-weight: 800; line-height: 1.3; color: var(--text); letter-spacing: -0.5px; }
+  .hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--pre), var(--pro)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .hero-sub { margin-top: 12px; font-size: 16px; color: var(--text-soft); }
 
-        /* Защита от копирования */
-        body {
-            user-select: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-        }
+  /* BLOCKS */
+  .block { margin-top: 48px; }
+  .block-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.08), transparent); margin: 48px 0 0; }
+  .block h2 { font-size: 22px; font-weight: 800; line-height: 1.3; color: var(--text); letter-spacing: -0.3px; margin-bottom: 16px; }
+  .block p { font-size: 17px; color: var(--text-mid); margin-bottom: 14px; line-height: 1.7; }
+  .block p strong { color: var(--text); font-weight: 700; }
 
-        /* Разрешаем выделение только в полях ввода */
-        input, textarea {
-            user-select: text;
-            -webkit-user-select: text;
-            -moz-user-select: text;
-            -ms-user-select: text;
-        }
+  .label { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; padding: 5px 12px; border-radius: 8px; margin-bottom: 14px; }
+  .label-pro { background: var(--pro-bg); color: var(--pro); }
+  .label-pre { background: var(--pre-bg); color: var(--pre); }
+  .label-neutral { background: rgba(0,0,0,0.04); color: var(--text-soft); }
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--text-dark);
-            background: var(--bg-light);
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
+  /* BACTERIA */
+  .bacteria-good, .bacteria-bad { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px; border-radius: var(--r-sm); margin-bottom: 8px; font-size: 16px; line-height: 1.6; }
+  .bacteria-good { background: var(--pre-bg); color: var(--pre); }
+  .bacteria-bad { background: #FDEEED; color: var(--danger); }
+  .bacteria-good .b-icon, .bacteria-bad .b-icon { font-size: 20px; min-width: 24px; margin-top: 1px; }
 
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 600;
-            line-height: 1.2;
-        }
+  /* DUO CARDS */
+  .duo-card { border-radius: var(--r); padding: 20px; margin-bottom: 10px; }
+  .duo-card.pro { background: var(--pro-bg); border-left: 4px solid var(--pro); }
+  .duo-card.pre { background: var(--pre-bg); border-left: 4px solid var(--pre); }
+  .duo-card .duo-name { font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+  .duo-card.pro .duo-name { color: var(--pro); }
+  .duo-card.pre .duo-name { color: var(--pre); }
+  .duo-card .duo-desc { font-size: 15px; color: var(--text-mid); line-height: 1.6; margin: 0; }
 
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: clamp(1.75rem, 4.5vw, 3rem);
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-            letter-spacing: -0.01em;
-            line-height: 1.15;
-            color: #1e3a8a;
-        }
+  /* WARN BOX */
+  .warn-box { display: flex; gap: 12px; padding: 16px; background: var(--warm-bg); border-left: 4px solid var(--warm); border-radius: var(--r-sm); margin-top: 16px; font-size: 15px; color: var(--text-mid); line-height: 1.6; align-items: flex-start; }
+  .warn-box .w-icon { font-size: 20px; min-width: 24px; }
 
-        h2 {
-            font-size: clamp(1.75rem, 4vw, 2.75rem);
-            margin-bottom: 1.25rem;
-        }
+  /* PRODUCT HEADER */
+  .prod-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+  .prod-header img { width: 76px; height: auto; border-radius: var(--r-sm); box-shadow: var(--shadow-md); }
+  .prod-header-text h2 { margin-bottom: 2px; }
+  .prod-header-text .prod-sub { font-size: 13px; color: var(--text-soft); font-weight: 500; }
 
-        h3 {
-            font-size: clamp(1.5rem, 3vw, 2rem);
-            margin-bottom: 1rem;
-        }
+  /* COMP CARD */
+  .comp-card { background: var(--card); border-radius: var(--r); box-shadow: var(--shadow-md); overflow: hidden; }
+  .comp-row { display: flex; gap: 14px; padding: 18px 20px; align-items: flex-start; border-bottom: 1px solid var(--border); }
+  .comp-row:last-child { border-bottom: none; }
+  .comp-emoji { font-size: 22px; min-width: 28px; margin-top: 2px; }
+  .comp-body h4 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+  .comp-body p { font-size: 15px; color: var(--text-soft); line-height: 1.55; margin: 0; }
 
-        p {
-            font-size: clamp(1rem, 2vw, 1.125rem);
-            color: var(--text-medium);
-            margin-bottom: 1rem;
-        }
+  /* HIGHLIGHT CARD */
+  .highlight-card { border-radius: var(--r); padding: 20px; margin: 20px 0; }
+  .highlight-card.warm { background: var(--warm-bg); }
+  .highlight-card.green { background: var(--pre-bg); }
+  .highlight-card h4 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .highlight-card p { font-size: 15px; color: var(--text-mid); line-height: 1.65; margin: 0; }
 
-        strong {
-            color: var(--text-dark);
-            font-weight: 600;
-        }
+  /* CREDS */
+  .creds { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .cred-tag { font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 8px; background: rgba(0,0,0,0.04); color: var(--text-soft); }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+  /* TIMELINE */
+  .tl { position: relative; padding-left: 24px; }
+  .tl::before { content: ''; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: linear-gradient(to bottom, var(--pre), var(--pro)); border-radius: 2px; }
+  .tl-item { position: relative; margin-bottom: 28px; }
+  .tl-item:last-child { margin-bottom: 0; }
+  .tl-item::before { content: ''; position: absolute; left: -21px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--pre); border: 3px solid var(--bg); box-shadow: 0 0 0 2px var(--pre); }
+  .tl-item .tl-when { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; color: var(--pre); margin-bottom: 4px; }
+  .tl-item .tl-what { font-size: 16px; color: var(--text-mid); line-height: 1.6; margin: 0; }
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, var(--bg-white) 0%, var(--accent-peach) 100%);
-            padding: 1.5rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
+  /* PROTOCOL */
+  .proto-card { background: var(--card); border-radius: var(--r); box-shadow: var(--shadow-md); overflow: hidden; }
+  .proto-row { display: flex; gap: 14px; padding: 18px 20px; align-items: flex-start; border-bottom: 1px solid var(--border); }
+  .proto-row:last-child { border-bottom: none; }
+  .proto-time { min-width: 68px; text-align: center; padding: 10px 0; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; line-height: 1.4; }
+  .proto-time.t-pro { background: var(--pro-bg); color: var(--pro); }
+  .proto-time.t-pre { background: var(--pre-bg); color: var(--pre); }
+  .proto-info h4 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+  .proto-info p { font-size: 15px; color: var(--text-soft); line-height: 1.5; margin: 0; }
 
-        .logo {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary);
-        }
+  /* MECHANISM */
+  .mech { margin-bottom: 32px; }
+  .mech-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 10px; background: linear-gradient(135deg, var(--pre), var(--pro)); color: white; font-size: 14px; font-weight: 800; margin-bottom: 10px; }
+  .mech h3 { font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 10px; }
+  .mech p { font-size: 16px; color: var(--text-mid); line-height: 1.7; margin-bottom: 12px; }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--bg-white) 0%, var(--accent-peach) 50%, var(--accent-mint) 100%);
-            padding: 4rem 0;
-            position: relative;
-            overflow: hidden;
-        }
+  /* CTA */
+  .cta { margin-top: 56px; text-align: center; padding: 40px 24px; background: var(--card); border-radius: var(--r); box-shadow: var(--shadow-md); }
+  .cta h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+  .cta p { font-size: 15px; color: var(--text-soft); margin-bottom: 24px; }
+  .cta-btn { display: inline-block; background: linear-gradient(135deg, var(--pre), var(--pro)); color: white; font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 700; padding: 16px 44px; border-radius: 100px; text-decoration: none; border: none; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; box-shadow: 0 4px 20px rgba(46,109,180,0.25); }
+  .cta-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 28px rgba(46,109,180,0.35); }
+  .cta-btn:active { transform: translateY(0); }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(225, 123, 92, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 50%, rgba(127, 182, 158, 0.1) 0%, transparent 50%);
-            pointer-events: none;
-        }
+  .footer { text-align: center; padding: 32px 20px 16px; font-size: 12px; color: #B5B0A8; }
 
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-            margin: 0 auto;
-        }
+  /* FADE IN */
+  .fi { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fi.visible { opacity: 1; transform: translateY(0); }
 
-        .hero h1 {
-            color: var(--text-dark);
-            line-height: 1.3;
-        }
-
-        .hero-subtitle {
-            font-size: clamp(1.125rem, 2.5vw, 1.375rem);
-            color: var(--text-medium);
-            margin: 2rem 0;
-            line-height: 1.6;
-        }
-
-        /* Quick Capture Form */
-        .quick-form {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            margin-top: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-
-        .quick-form p {
-            margin-bottom: 15px;
-            font-size: 1rem;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        .form-row input {
-            width: 100%;
-            padding: 12px;
-            border: 2px solid #E5E5E5;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .form-row input:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            font-size: 1.125rem;
-            font-weight: 500;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            font-family: 'Montserrat', sans-serif;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-            box-shadow: 0 10px 30px rgba(225, 123, 92, 0.3);
-            width: 100%;
-        }
-
-        .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 15px 40px rgba(225, 123, 92, 0.4);
-        }
-
-        /* Sections */
-        section {
-            padding: 4rem 0;
-        }
-
-        .section-alt {
-            background: var(--bg-white);
-        }
-
-        /* Pain Amplification */
-        .pain-box {
-            background: linear-gradient(135deg, #FFE5E5 0%, var(--bg-white) 100%);
-            padding: 2.5rem;
-            border-radius: 20px;
-            margin: 2rem 0;
-            border-left: 4px solid var(--primary);
-        }
-
-        .pain-box ul {
-            list-style: none;
-            margin-top: 1rem;
-        }
-
-        .pain-box li {
-            padding: 0.5rem 0 0.5rem 2rem;
-            position: relative;
-        }
-
-        .pain-box li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-            font-weight: 600;
-        }
-
-        /* Explanation Box */
-        .explain-box {
-            background: linear-gradient(135deg, var(--accent-mint) 0%, var(--bg-white) 100%);
-            padding: 2.5rem;
-            border-radius: 20px;
-            margin: 2rem 0;
-            border-left: 4px solid var(--secondary);
-        }
-
-        /* Result Box */
-        .result-box {
-            background: linear-gradient(135deg, var(--accent-peach) 0%, var(--bg-white) 100%);
-            padding: 2.5rem;
-            border-radius: 20px;
-            margin: 2rem 0;
-            border-left: 4px solid var(--primary);
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .stat-item {
-            text-align: center;
-            padding: 1.5rem;
-            background: white;
-            border-radius: 10px;
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            display: block;
-            font-family: 'Cormorant Garamond', serif;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--text-medium);
-        }
-
-        /* Meaning Box */
-        .meaning-box {
-            background: #E8F4EF;
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        .meaning-box p {
-            margin-bottom: 8px;
-        }
-
-        /* Pricing */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-
-        .pricing-card {
-            background: var(--bg-white);
-            padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            text-align: center;
-            transition: transform 0.3s ease;
-            position: relative;
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .pricing-card.featured {
-            border: 3px solid var(--primary);
-        }
-
-        .pricing-badge {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--primary);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .pricing-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.75rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .pricing-price {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin: 1rem 0;
-        }
-
-        .pricing-price small {
-            font-size: 1rem;
-            color: var(--text-medium);
-            font-weight: 400;
-        }
-
-        .pricing-comparison {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-        }
-
-        .pricing-features {
-            list-style: none;
-            margin: 2rem 0;
-            text-align: left;
-        }
-
-        .pricing-features li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #F0F0F0;
-        }
-
-        .pricing-features li:last-child {
-            border-bottom: none;
-        }
-
-        /* WhatsApp Button */
-        .whatsapp-btn {
-            background: #25D366;
-            color: white;
-            margin-top: 1rem;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
-            display: block;
-        }
-
-        .whatsapp-btn:hover {
-            background: #20BA5A;
-            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--text-dark);
-            color: rgba(255,255,255,0.7);
-            text-align: center;
-            padding: 3rem 2rem;
-        }
-
-        footer p {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.9rem;
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-            
-            .pricing-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            section {
-                padding: 3rem 0;
-            }
-        }
-    </style>
+  @media (max-width: 360px) {
+    .hero h1 { font-size: 24px; }
+    .block h2 { font-size: 20px; }
+    .duo-card { padding: 16px; }
+  }
+</style>
 </head>
 <body>
+<div class="page">
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">Стройность без диет</div>
-        </div>
-    </header>
+  <div class="hero fi">
+    <h1>Два продукта, которые <em>перезапускают кишечник</em> за&nbsp;5–7&nbsp;дней</h1>
+    <p class="hero-sub">Состав, схема приёма и&nbsp;как именно это&nbsp;работает</p>
+  </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Как убрать тягу к сладкому и начать худеть без диет за 7-14 дней</h1>
-                
-                <div class="hero-subtitle">
-                    <p><strong>Для тех, кто устал худеть с понедельника. Без силы воли. Без срывов. Без готовки отдельно.</strong></p>
-                    <p>Я покажу, как запустить организм, чтобы он сам перестал требовать еду по вечерам.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="block-divider"></div>
 
-    <!-- Pain Amplification -->
-    <section>
-        <div class="container">
-            <h2>Время 22:00. Ты идеально держалась весь день. А сейчас руки сами тянутся к холодильнику.</h2>
-            
-            <div class="pain-box">
-                <p>Знакомо?</p>
-                <ul>
-                    <li>Ты весь день держишься, не переедаешь. Пьёшь воду.</li>
-                    <li>А вечером случается срыв. Накопленный за день стресс требует выхода, и ты идешь на кухню не за конфеткой, а чтобы конкретно поесть. <strong>Как будто внутри открылась черная дыра.</strong></li>
-                    <li>Сметаешь всё подряд, просто чтобы расслабиться. А потом ругаешь себя за слабость.</li>
-                    <li>И думаешь: <em>"Ну почему у меня опять нет силы воли..."</em></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <div class="block fi">
+    <h2>Почему два продукта, а&nbsp;не&nbsp;один?</h2>
+    <p>В&nbsp;кишечнике живут <strong>два типа бактерий:</strong></p>
+    <div class="bacteria-good"><span class="b-icon">✅</span><span><strong>Полезные</strong> — помогают переваривать еду и&nbsp;держать вес в&nbsp;норме</span></div>
+    <div class="bacteria-bad"><span class="b-icon">❌</span><span><strong>Вредные</strong> — вызывают вздутие, тягу к&nbsp;сладкому и&nbsp;воспаление</span></div>
+    <p style="margin-top:16px;"><strong>Когда вредных больше — начинаются проблемы.</strong></p>
+    <p>Чтобы вернуть баланс, нужна связка из&nbsp;двух продуктов:</p>
+    <div class="duo-card pro"><div class="duo-name">Пробиотик</div><p class="duo-desc">= сами полезные бактерии (60&nbsp;миллиардов в&nbsp;одном пакетике). Они восстанавливают микрофлору, улучшают пищеварение и&nbsp;дают энергию.</p></div>
+    <div class="duo-card pre"><div class="duo-name">Пребиотик</div><p class="duo-desc">= пища для этих бактерий + белок, кальций и&nbsp;витамины для тебя. Густой тёплый коктейль, который заменяет перекус.</p></div>
+    <div class="warn-box"><span class="w-icon">☝️</span><span>Полезные бактерии не&nbsp;выживут в&nbsp;кишечнике, если их не&nbsp;кормить. <strong>Пребиотик</strong> даёт им питание и&nbsp;среду для размножения. Только работая в&nbsp;паре, они способны полностью «перезагрузить» кишечник за&nbsp;неделю.</span></div>
+  </div>
 
-    <!-- Explanation -->
-    <section class="section-alt">
-        <div class="container">
-            <h2>А теперь я скажу тебе то, что изменило всё.</h2>
-            
-            <div class="explain-box">
-                <p><strong>Это не ты слабая.</strong></p>
-                
-                <p>Вечерний срыв — это не твоя вина. Это <strong>жёсткий биохимический приказ</strong> твоего организма.</p>
-                
-                <p>В твоём кишечнике живут <strong>патогенные бактерии</strong>. Они питаются сахаром. И когда им нужна еда — они <strong>посылают сигналы в мозг</strong>: <em>"Корми нас! Срочно!"</em></p>
-                
-                <p>Мозг думает, что тебе срочно нужна энергия. И ты идёшь к холодильнику.</p>
-                
-                <img src="disbalance.png" alt="Здоровый баланс vs Дисбаланс кишечника" style="width: 100%; max-width: 900px; height: auto; margin: 2rem auto; display: block; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                
-                <p><strong>Ты не виновата.</strong> Просто в твоём кишечнике <strong>дисбаланс</strong>. Плохих бактерий больше, чем хороших.</p>
-            </div>
-        </div>
-    </section>
+  <div class="block-divider"></div>
 
-    <!-- My Result -->
-    <section>
-        <div class="container">
-            <h2>Когда я это поняла — всё изменилось.</h2>
-            
-            <div class="result-box">
-                <p>Я <strong>не села на диету</strong>. Я <strong>не стала считать калории</strong>. Я <strong>не стала терпеть голод</strong>.</p>
-                
-                <p>Я просто <strong>восстановила баланс</strong> в кишечнике. И организм сам начал делать остальное.</p>
-                
-                <h3 style="margin-top: 2rem;">Моя история с цифрами:</h3>
-                
-                <p>Я начала этот курс <strong>10 февраля 2026 года</strong>. Первые 5 дней ничего особенного не чувствовала.</p>
-                
-                <p>На <strong>7-й день</strong> я заметила первое изменение: ушла тяжесть после еды. Знаете это чувство, когда к вечеру живот как надутый шарик? Вот оно пропало. Появилась легкость.</p>
-                
-                <p>Через <strong>2 недели</strong> я поймала себя на мысли: я не думаю о еде постоянно. Раньше к 10 вечера всегда шла к холодильнику за порцией "успокоительного" в виде еды. Теперь — просто не хочется.</p>
-            </div>
-            
-            <div class="meaning-box">
-                <p><strong>Что это значит для тебя:</strong></p>
-                <p>→ Ты перестаёшь срываться вечером</p>
-                <p>→ Вес начинает уходить сам</p>
-                <p>→ Ты не живёшь в постоянной борьбе с собой</p>
-            </div>
-        </div>
-    </section>
+  <div class="block fi">
+    <span class="label label-pro">Продукт №1</span>
+    <div class="prod-header"><img src="probiotic.png" alt="Пробиотик Longrich"><div class="prod-header-text"><h2 style="margin-bottom:2px;">Из чего состоит пробиотик?</h2><span class="prod-sub">Порошок в саше · 2 г × 20 пакетиков</span></div></div>
+    <div class="comp-card">
+      <div class="comp-row"><span class="comp-emoji">🦠</span><div class="comp-body"><h4>20 видов полезных бактерий</h4><p>В&nbsp;аптечных пробиотиках обычно 1–3 вида, здесь — целых 20. Это как разница между одним врачом и&nbsp;целой больницей</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">💪</span><div class="comp-body"><h4>60 миллиардов живых бактерий</h4><p>Для сравнения: в&nbsp;аптечном Линексе — всего 12&nbsp;миллионов. Разница — в&nbsp;тысячи раз</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">🌾</span><div class="comp-body"><h4>8 видов растительной клетчатки</h4><p>Всё включено: бактерии + их питание в&nbsp;одном пакетике</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">🍃</span><div class="comp-body"><h4>Экстракты годжи и гриба Пория</h4><p>Поддержка печени и вывод лишней жидкости</p></div></div>
+    </div>
+    <div class="highlight-card warm"><h4>Почему это работает, а&nbsp;обычные пробиотики из&nbsp;аптеки — нет?</h4><p>У&nbsp;обычных пробиотиков нет защиты — кислота желудка убивает 95% бактерий, и&nbsp;до&nbsp;кишечника почти ничего не&nbsp;доходит. Здесь каждая бактерия в&nbsp;пяти защитных оболочках (технология микрокапсулирования). Они раскрываются только в&nbsp;кишечнике — там, где бактерии и&nbsp;должны работать. Бактерии остаются живыми даже без холодильника — можно хранить в&nbsp;сумке, в&nbsp;шкафу, брать в&nbsp;дорогу. У&nbsp;аптечных аналогов большая часть бактерий погибает ещё до&nbsp;того, как ты откроешь упаковку.</p></div>
+    <div class="highlight-card green"><p><strong>Формула 4-в-1:</strong> пробиотик + пребиотик + постбиотик (мгновенный иммунный ответ) + экстракты ТКМ. Это не&nbsp;просто бактерии — это готовая система восстановления.</p><div class="creds"><span class="cred-tag">16 патентов</span><span class="cred-tag">SGS</span><span class="cred-tag">GMP</span><span class="cred-tag">Халяль</span></div></div>
+    <p style="font-size:15px;color:var(--text-soft);">Можно растворить в тёплой воде, молоке, йогурте. Или просто высыпать в рот — приятный на вкус.</p>
+  </div>
 
-    <!-- System Section -->
-    <section class="section-alt">
-        <div class="container">
-            <h2>Система из 2 шагов<br><span style="font-size: 0.6em; font-family: 'Montserrat', sans-serif; font-weight: 400;">(занимает 1 минуту в день)</span></h2>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
-                <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-                    <div style="display: inline-block; width: 40px; height: 40px; background: var(--primary); color: white; border-radius: 50%; text-align: center; line-height: 40px; font-weight: 600; margin-bottom: 1rem;">1</div>
-                    <h3>Пробиотик Longrich<br><small style="font-size: 0.6em; font-weight: 400;">(Очищение)</small></h3>
-                    
-                    <img src="probiotic.png" alt="Пробиотик Longrich" style="width: 100%; max-width: 600px; height: auto; margin: 1.5rem auto; display: block; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                    
-                    <p><strong>60 миллиардов живых бактерий</strong> в защитной микрокапсуле. Они вытесняют патогенную флору — тех самых «сахарных наркоманов», которые заставляли тебя переедать. Кишечник заживает, и вес наконец-то сдвигается с мёртвой точки.</p>
-                    
-                    <p><strong>Как пить:</strong> Высыпать пакетик в рот утром. Всё.</p>
-                </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-                    <div style="display: inline-block; width: 40px; height: 40px; background: var(--primary); color: white; border-radius: 50%; text-align: center; line-height: 40px; font-weight: 600; margin-bottom: 1rem;">2</div>
-                    <h3>Пребиотик Longrich<br><small style="font-size: 0.6em; font-weight: 400;">(Баланс и сытость)</small></h3>
-                    
-                    <img src="prebiotic.png" alt="Пребиотик Longrich" style="width: 100%; max-width: 600px; height: auto; margin: 1.5rem auto; display: block; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                    
-                    <p>Кальций, витамины, цинк. Идеальная еда для полезных бактерий. Мягко блокирует голод.</p>
-                    
-                    <p><strong>Как пить:</strong> Развести в половине стакана тёплой воды. Готово.</p>
-                    
-                    <div style="background: var(--accent-mint); padding: 1.5rem; border-radius: 10px; margin-top: 1.5rem;">
-                        <p style="margin: 0;"><strong>Что происходит?</strong><br>
-                        Полезные бактерии вырабатывают <strong>бутират</strong> — стоп-сигнал для мозга: <em>"Мы сыты, прекрати поиск еды".</em> Плюс кальций снимает вечернюю тревожность.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="block-divider"></div>
 
-    <!-- Timeline Section -->
-    <section>
-        <div class="container">
-            <h2>Что будет происходить с организмом?</h2>
-            
-            <div style="max-width: 800px; margin: 3rem auto;">
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-bottom: 2rem;">
-                    <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">📅 Дни 1-3</div>
-                    <p>Уходит тяжесть в животе. Появляется забытое чувство лёгкости после еды. Больше не чувствуешь себя "надутым шариком" к вечеру.</p>
-                </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-bottom: 2rem;">
-                    <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">📅 Дни 7-10</div>
-                    <p>Нормализуется стул. Резко снижается <strong>тяга к сладкому</strong> по вечерам. Ты просто перестаёшь думать о еде 24/7.</p>
-                </div>
-                
-                <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);">
-                    <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--primary); margin-bottom: 1rem;">📅 День 30</div>
-                    <p>Видимое снижение объёмов. Одежда сидит свободнее. Энергия на весь день <strong>без кофе</strong>. Ты смотришь в зеркало — и видишь изменения.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="block fi">
+    <span class="label label-pre">Продукт №2</span>
+    <div class="prod-header"><img src="prebiotic.png" alt="Пребиотик Longrich"><div class="prod-header-text"><h2 style="margin-bottom:2px;">Из чего состоит пребиотик?</h2><span class="prod-sub">Соевый коктейль · 20 г × 10 стиков</span></div></div>
+    <p>Густой соевый коктейль из пакетика. Заливаешь горячей водой — получаешь сытный напиток. По ощущениям — как тёплый латте с лёгким ореховым привкусом.</p>
+    <div class="comp-card">
+      <div class="comp-row"><span class="comp-emoji">🌱</span><div class="comp-body"><h4>Экстракт зародышей сои</h4><p>Не обычная соя — запатентованный сорт, из&nbsp;которого убрали всё лишнее и оставили максимум пользы. 15 лет разработки</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">🦴</span><div class="comp-body"><h4>Кальций + Витамин D</h4><p>Тот самый кальций, которого вечно не&nbsp;хватает — но в&nbsp;связке с&nbsp;витамином D, без которого он просто проходит транзитом</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">⚡</span><div class="comp-body"><h4>Витамины группы B + C, A, E</h4><p>B-витамины — чтобы не&nbsp;клевать носом после обеда и&nbsp;не&nbsp;срываться на&nbsp;близких вечером. А, С, Е — чтобы кожа светилась, а&nbsp;не&nbsp;тускнела</p></div></div>
+      <div class="comp-row"><span class="comp-emoji">🔬</span><div class="comp-body"><h4>Пребиотики + цинк</h4><p>Цинк — главный минерал для кожи без высыпаний и&nbsp;волос без выпадения. Пребиотики — питание для бактерий из&nbsp;пробиотика</p></div></div>
+    </div>
+    <div class="warn-box"><span class="w-icon">☝️</span><span><strong>Важно:</strong> заливать кипятком (80°C+). Это наоборот от пробиотика — там кипяток убивает бактерии, а тут раскрывает вкус и питательность.</span></div>
+  </div>
 
-    <!-- CTA Form -->
-    <section style="background: var(--bg-light); padding: 4rem 0;">
-        <div class="container">
-            <div style="background: white; padding: 40px; border-radius: 20px; max-width: 600px; margin: 0 auto; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
-                <h2 style="text-align: center; margin-bottom: 1rem; font-size: clamp(1.75rem, 4vw, 2.25rem);">Напиши мне — и я скажу, подойдёт ли тебе эта программа. Это бесплатно и займёт 2 минуты</h2>
-                <form id="middle-form" style="margin-top: 2rem;">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
-                        <input type="text" name="name" placeholder="Имя" required style="width: 100%; padding: 14px; border: 2px solid #E5E5E5; border-radius: 10px; font-size: 1rem; font-family: 'Montserrat', sans-serif;">
-                        <input type="tel" name="phone" placeholder="WhatsApp" required style="width: 100%; padding: 14px; border: 2px solid #E5E5E5; border-radius: 10px; font-size: 1rem; font-family: 'Montserrat', sans-serif;">
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Получить разбор →</button>
-                </form>
-            </div>
-        </div>
-    </section>
+  <div class="block-divider"></div>
 
-    <!-- Bonuses Section -->
-    <section class="section-alt">
-        <div class="container">
-            <h2>Полный комплект для перехода к стройности без диет.</h2>
-            
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Но чтобы «взломать» старые привычки окончательно, ты получаешь:</p>
-            
-            <div style="display: grid; gap: 2.5rem; margin: 3rem 0;">
-                <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid var(--primary);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎁</div>
-                    <h3><span style="font-size: 1em;">БОНУС 1:</span> Конструктор «Единый стол»<br><small style="font-size: 0.65em; font-weight: 400; color: var(--text-medium);">сытая семья + твоя стройность</small></h3>
-                    
-                    <p style="margin: 1.5rem 0;">Больше не нужно готовить мужу отдельно, детям отдельно, а себе — «лист салата».</p>
-                    
-                    <div style="background: var(--accent-mint); padding: 1rem 1.5rem; border-radius: 10px; margin: 1rem 0; font-size: 0.95rem;">
-                        <strong>Секрет:</strong> 10 комбинаций продуктов, которые насыщают мужчин и детей, но за счёт биохакерского порядка съедания — сжигают твой жир.
-                    </div>
-                </div>
-                
-                <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid var(--primary);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎁</div>
-                    <h3><span style="font-size: 1em;">БОНУС 2:</span> «Аварийное отключение аппетита»<br><small style="font-size: 0.65em; font-weight: 400; color: var(--text-medium);">4 биохака для моментального контроля</small></h3>
-                    
-                    <div style="background: var(--accent-mint); padding: 1rem 1.5rem; border-radius: 10px; margin: 1rem 0; font-size: 0.95rem;">
-                        <strong>Формат:</strong> PDF-гайд с пошаговыми протоколами
-                    </div>
-                    
-                    <p style="margin-bottom: 1.5rem;"><strong>Отключаем вечернюю тягу к еде за 3 минуты.</strong></p>
-                    
-                    <ul style="list-style: none; margin-top: 1.5rem;">
-                        <li style="padding: 0.5rem 0 0.5rem 2rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-weight: 600;">→</span>
-                            Как "взломать" рецепторы и обмануть мозг
-                        </li>
-                        <li style="padding: 0.5rem 0 0.5rem 2rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-weight: 600;">→</span>
-                            Как подменить дофамин без сахара
-                        </li>
-                        <li style="padding: 0.5rem 0 0.5rem 2rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-weight: 600;">→</span>
-                            Как экстренно "накормить" микробиом и выключить приступ голода
-                        </li>
-                        <li style="padding: 0.5rem 0 0.5rem 2rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-weight: 600;">→</span>
-                            Как сбросить кортизол за 60 секунд
-                        </li>
-                    </ul>
-                    
-                    <p style="margin-top: 1.5rem;">Это про биохимию, не про силу воли. <strong>Блокировка сигнала голода.</strong></p>
-                </div>
-                
-                <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-top: 4px solid var(--primary);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🎁</div>
-                    <h3><span style="font-size: 1em;">БОНУС 3:</span> Закрытый чат «Био-Трекер»</h3>
-                    
-                    <p style="margin: 1.5rem 0;">"Я вечно всё бросаю на полпути. Куплю, попью два дня и забуду". Здесь эта схема сломается.</p>
-                    
-                    <div style="background: var(--accent-mint); padding: 1rem 1.5rem; border-radius: 10px; margin: 1rem 0; font-size: 0.95rem;">
-                        <strong>Формат:</strong> 30 дней в закрытой Telegram-группе
-                    </div>
-                    
-                    <p>Ты покупаешь не просто пробиотик. Ты покупаешь <strong>систему неизбежного результата</strong> и мою дисциплину напрокат, пока твоя собственная не окрепнет.</p>
-                    
-                    <ul style="list-style: none; margin-top: 1.5rem;">
-                        <li style="padding: 0.5rem 0 0.5rem 2rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-weight: 600;">→</span>
-                            <strong>Ежедневный лог-ин (Check-in):</strong> Короткий формат отчёта, который занимает 1 минуту, но намертво фиксирует твой фокус на цели весь день.
-                        </li>
-                        <li style="padding: 0.5rem 0 0.5rem 2rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-weight: 600;">→</span>
-                            <strong>Калибровка в реальном времени:</strong> Прямые ответы на вопросы и мгновенная корректировка твоего протокола, если вес «встал».
-                        </li>
-                        <li style="padding: 0.5rem 0 0.5rem 2rem; position: relative;">
-                            <span style="position: absolute; left: 0; color: var(--primary); font-weight: 600;">→</span>
-                            <strong>Accountability (Подотчётность):</strong> Я буду твоей внешней силой воли в те моменты, когда мозг начнёт искать отговорки и тянуться к сладкому.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="block fi">
+    <span class="label label-neutral">Чего ожидать</span>
+    <h2>Что ты почувствуешь?</h2>
+    <div class="tl">
+      <div class="tl-item"><div class="tl-when">День 1–3</div><p class="tl-what">Может быть лёгкое бурление в животе. Это нормально — бактерии начали работу, кишечник «просыпается». Проходит само.</p></div>
+      <div class="tl-item"><div class="tl-when">День 3–5</div><p class="tl-what">Стул нормализуется. Утром встаёшь легче. Живот не раздут.</p></div>
+      <div class="tl-item"><div class="tl-when">Неделя 2</div><p class="tl-what">Тяга к сладкому ослабевает. Когда кишечник работает правильно, он перестаёт «требовать» быстрые углеводы. Меньше вздутия, больше энергии днём.</p></div>
+      <div class="tl-item"><div class="tl-when">Месяц</div><p class="tl-what">Кожа чище, стабильная энергия без провалов, спокойнее отношение к еде.</p></div>
+    </div>
+    <p style="font-size:14px;color:var(--text-soft);margin-top:20px;">Результат у всех разный. Кто-то чувствует разницу на 2-й день. Кому-то нужно 2 недели. Зависит от того, насколько запущен кишечник.</p>
+  </div>
 
-    <!-- Offer -->
-    <section class="section-alt">
-        <div class="container">
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; font-size: 1.125rem; color: var(--text-medium); padding: 1.5rem; background: var(--accent-peach); border-radius: 15px;">
-                <strong>Визит к нутрициологу</strong> — от 20 000₸ за одну встречу. <strong>Марафон похудения</strong> — от 40 000₸, и большинство бросают через неделю. <strong>Здесь</strong> — полная система на 2 месяца за 37 500₸
-            </p>
-            
-            <h2>Выбери свой курс</h2>
-            
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-title">Пробный курс</div>
-                    <div class="pricing-price">18,500₸<br><small>рассчитан на 20 дней</small></div>
-                    <ul class="pricing-features">
-                        <li>20 пакетиков пробиотика</li>
-                        <li>20 пакетиков пребиотика</li>
-                        <li>Бонус: Конструктор «Единый стол»</li>
-                        <li>Бонус: «Аварийное отключение аппетита»</li>
-                        <li>Доступ в чат на 7 дней</li>
-                    </ul>
-                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20пробный%20курс" class="btn btn-primary">Начать с пробного</a>
-                </div>
-                
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Популярный</div>
-                    <div class="pricing-title">Полный курс</div>
-                    <div class="pricing-price">37,500₸<br><small>рассчитан на 2 месяца</small></div>
-                    <ul class="pricing-features">
-                        <li>60 пакетиков пробиотика</li>
-                        <li>70 пакетиков пребиотика</li>
-                        <li>Все 3 бонуса</li>
-                        <li>Закрытый чат на 30 дней</li>
-                        <li>Приоритетная поддержка</li>
-                    </ul>
-                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20курс" class="btn btn-primary">Забронировать курс</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="block-divider"></div>
 
-    <!-- Guarantee Section -->
-    <section style="background: var(--bg-light); padding: 3rem 2rem;">
-        <div class="container">
-            <div style="max-width: 700px; margin: 0 auto; padding: 2rem; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); border-left: 4px solid var(--secondary);">
-                <p style="font-size: 1.125rem; line-height: 1.7; margin: 0;">
-                    <strong style="color: var(--primary); font-size: 1.25rem;">Гарантия:</strong> Если за 14 дней приёма ты не почувствуешь лёгкость — мы вместе разберёмся, что скорректировать. Мне важен твой результат, а не просто продажа.
-                </p>
-            </div>
-        </div>
-    </section>
+  <div class="block fi">
+    <span class="label label-neutral">Схема приёма</span>
+    <h2>Как принимать</h2>
+    <div class="proto-card">
+      <div class="proto-row"><div class="proto-time t-pro">Утро<br>натощак</div><div class="proto-info"><h4>1 пакетик пробиотика</h4><p>Растворить в тёплой воде (до 37°C) или просто высыпать в рот</p></div></div>
+      <div class="proto-row"><div class="proto-time t-pre">Завтрак<br>или полдник</div><div class="proto-info"><h4>1 стик пребиотика</h4><p>Залить горячей водой (80°C+), размешать. Пить как коктейль</p></div></div>
+    </div>
+    <p style="text-align:center;margin-top:16px;"><strong>Два пакетика в день. Занимает 2 минуты.</strong></p>
+    <div class="warn-box"><span class="w-icon">🌡️</span><span>Единственное правило — не перепутай температуру.<br><strong>Пробиотик = тёплая вода.</strong><br><strong>Пребиотик = горячая вода.</strong></span></div>
+  </div>
 
-    <!-- Final CTA Section -->
-    <section style="background: linear-gradient(135deg, var(--bg-white) 0%, var(--accent-peach) 50%, var(--accent-mint) 100%); padding: 5rem 2rem; position: relative; overflow: hidden;">
-        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 50%, rgba(225, 123, 92, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(127, 182, 158, 0.1) 0%, transparent 50%); pointer-events: none;"></div>
-        
-        <div class="container" style="position: relative; z-index: 1; max-width: 800px; margin: 0 auto;">
-            <h2 style="text-align: center; margin-bottom: 2rem;">Что произойдёт, если ты закроешь этот сайт?</h2>
-            
-            <p style="text-align: center; font-size: 1.125rem; margin-bottom: 2rem;">Ничего. Завтра будет такой же день. Через месяц ты обнаружишь плюс 2 килограмма на весах и снова начнёшь искать «новую диету».</p>
-            
-            <h3 style="text-align: center; margin: 3rem 0 1.5rem; font-size: clamp(1.5rem, 3vw, 2rem);">Почему решение нужно принимать сейчас?</h3>
-            
-            <p style="margin-bottom: 1.5rem;">Я не продаю просто коробочки с пробиотиком. Я продаю <strong>результат</strong>. А результат требует моего личного участия в закрытом чате «Био-Трекер».</p>
-            
-            <p style="margin-bottom: 1.5rem;">Мой фокус не бесконечен. Чтобы качественно делать ежедневные check-in разборы и корректировать ваши протоколы, я могу взять в работу на этот месяц только <strong style="font-size: 1.25em; color: var(--primary);">35 человек</strong>.</p>
-            
-            <p style="margin-bottom: 3rem;">Как только места заполнятся, я закрою доступ к полному пакету с личным сопровождением. Если ты готова к трансформации — занимай своё место, пока оно свободно.</p>
-            
-            <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20Био-Трекер" class="btn btn-primary" style="display: block; max-width: 500px; margin: 0 auto; font-size: 1.25rem; padding: 1.25rem 2.5rem;">Забронировать место в Био-Трекере</a>
-        </div>
-    </section>
+  <div class="block-divider"></div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>Продукт не является лекарственным средством (БАД). Эффект зависит от индивидуальных особенностей.</p>
-            <p>© 2026 Система Longrich. Все права защищены.</p>
-        </div>
-    </footer>
+  <div class="block fi">
+    <span class="label label-neutral">Механизм</span>
+    <h2>Как это помогает похудеть и&nbsp;перестать срываться?</h2>
+    <p>Это не жиросжигатель. Здесь нет ничего, что «ускоряет метаболизм» и разгоняет сердце. Механизм другой — через кишечник.</p>
+    <div class="mech"><div class="mech-badge">1</div><h3>Почему ты срываешься</h3><p>Когда кишечник работает плохо, в нём живут «неправильные» бактерии — те, которые питаются сахаром и мучным. И они буквально требуют свою еду. Ты чувствуешь это как непреодолимую тягу к сладкому, к хлебу, к булочке после обеда.</p><p>Это не вопрос силы воли — это физиология. Бактерии в кишечнике буквально посылают сигнал в мозг: «дай сахар». Пока они там — тяга не уйдёт, сколько ни терпи.</p><p><strong>Пробиотик</strong> меняет состав этих бактерий. Вытесняет «сладкоежек» и заселяет тех, которые питаются клетчаткой. Тяга ослабевает физиологически — не потому что ты терпишь, а потому что организм перестаёт это требовать.</p></div>
+    <div class="mech"><div class="mech-badge">2</div><h3>Почему вес стоит, хотя ты мало ешь</h3><p>Есть такое понятие — «бактерии ожирения». Определённые бактерии в кишечнике умеют извлекать калории буквально из всего и откладывать их в жир. Ты ешь салат — а тело запасает.</p><p>Штаммы бифидобактерий в <strong>пробиотике</strong> меняют этот профиль. Бактерии начинают «сжигать», а не «запасать».</p></div>
+    <div class="mech"><div class="mech-badge">3</div><h3>Почему живот торчит, хотя ты худая</h3><p>Часто это не жир, а раздутый газами кишечник + отёки. При стрессе пищеварение отключается, еда гниёт, образуются газы — живот надувается как шарик.</p><p><strong>Пробиотик</strong> подавляет гнилостные бактерии — газы уходят, живот физически «сдувается». А экстракт гриба Пория в составе выводит лишнюю воду — те самые отёки, которые ты путаешь с жиром.</p></div>
+    <div class="mech"><div class="mech-badge">4</div><h3>Почему после обеда хочется спать и есть сладкое</h3><p>Это сахарные качели. Съела быстрые углеводы → сахар в крови взлетел → инсулин его резко опустил → упадок сил → хочется ещё сладкого. Замкнутый круг.</p><p><strong>Пребиотик</strong> ломает этот цикл. У него низкий гликемический индекс — сахар поднимается плавно и так же плавно снижается. Нет скачка — нет провала — нет тяги. Плюс белок и клетчатка дают сытость на 3 часа.</p></div>
+    <div class="highlight-card green"><h4>Что получается в итоге</h4><p>Пробиотик убирает причину — неправильные бактерии, газы, воспаление. Пребиотик перестраивает питание — ровная энергия, нет скачков сахара, долгая сытость. Вместе они не «сжигают жир» — они убирают причины, по которым тело его накапливает. Вес начинает уходить сам, потому что ты перестаёшь переедать и тело перестаёт запасать.</p></div>
+  </div>
 
-    <script>
-        // Form handling
-        document.getElementById('middle-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const name = formData.get('name');
-            const phone = formData.get('phone');
-            const message = `Привет! Меня зовут ${name}. Хочу получить разбор моей ситуации.`;
-            window.location.href = `https://wa.me/77022645778?text=${encodeURIComponent(message)}`;
-        });
+  <div class="cta fi">
+    <h2>Хочешь попробовать?</h2>
+    <p>Напиши тому, кто скинул тебе эту ссылку — расскажет, как заказать и&nbsp;с&nbsp;чего начать</p>
+    <a href="#" class="cta-btn" onclick="alert('Вернись в чат и напиши тому, кто отправил тебе эту ссылку ✌️'); return false;">Написать</a>
+  </div>
 
-        // Защита контента от копирования
-        // Блокировка правого клика
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-            return false;
-        });
+</div>
 
-        // Блокировка выделения текста
-        document.addEventListener('selectstart', function(e) {
-            e.preventDefault();
-            return false;
-        });
+<div class="footer">© 2026 Longrich. Информационная страница продукта</div>
 
-        // Блокировка копирования через CSS также добавлена в стили
-        document.body.style.userSelect = 'none';
-        document.body.style.webkitUserSelect = 'none';
-        document.body.style.mozUserSelect = 'none';
-        document.body.style.msUserSelect = 'none';
-
-        // Блокировка горячих клавиш
-        document.addEventListener('keydown', function(e) {
-            // Ctrl+C (копирование)
-            if (e.ctrlKey && e.keyCode === 67) {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+U (просмотр кода)
-            if (e.ctrlKey && e.keyCode === 85) {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+S (сохранение)
-            if (e.ctrlKey && e.keyCode === 83) {
-                e.preventDefault();
-                return false;
-            }
-            // F12 (консоль разработчика)
-            if (e.keyCode === 123) {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+Shift+I (консоль)
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 73) {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+Shift+J (консоль)
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 74) {
-                e.preventDefault();
-                return false;
-            }
-            // Ctrl+Shift+C (инспектор элементов)
-            if (e.ctrlKey && e.shiftKey && e.keyCode === 67) {
-                e.preventDefault();
-                return false;
-            }
-        });
-    </script>
-
+<script>
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.addEventListener('selectstart', e => e.preventDefault());
+document.addEventListener('copy', e => e.preventDefault());
+document.addEventListener('cut', e => e.preventDefault());
+document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'C' || e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S')) { e.preventDefault(); } });
+</script>
 </body>
 </html>
