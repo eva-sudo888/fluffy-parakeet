@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Как убрать тягу к сладкому и начать худеть без диет за 7-14 дней</title>
     <meta name="description" content="Без силы воли, без срывов и без готовки отдельно. Система восстановления метаболизма Longrich.">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '954338777531441');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=954338777531441&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -694,7 +713,7 @@
                         <li>Бонус: «Аварийное отключение аппетита»</li>
                         <li>Доступ в чат на 7 дней</li>
                     </ul>
-                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20пробный%20курс" class="btn btn-primary">Начать с пробного</a>
+                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20пробный%20курс" class="btn btn-primary" onclick="if(typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', {content_name: 'Пробный курс', value: 18500, currency: 'KZT'});">Начать с пробного</a>
                 </div>
                 
                 <div class="pricing-card featured">
@@ -708,7 +727,7 @@
                         <li>Закрытый чат на 30 дней</li>
                         <li>Приоритетная поддержка</li>
                     </ul>
-                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20курс" class="btn btn-primary">Забронировать курс</a>
+                    <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20курс" class="btn btn-primary" onclick="if(typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout', {content_name: 'Полный курс', value: 37500, currency: 'KZT'});">Забронировать курс</a>
                 </div>
             </div>
         </div>
@@ -742,7 +761,7 @@
             
             <p style="margin-bottom: 3rem;">Как только места заполнятся, я закрою доступ к полному пакету с личным сопровождением. Если ты готова к трансформации — занимай своё место, пока оно свободно.</p>
             
-            <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20Био-Трекер" class="btn btn-primary" style="display: block; max-width: 500px; margin: 0 auto; font-size: 1.25rem; padding: 1.25rem 2.5rem;">Забронировать место в Био-Трекере</a>
+            <a href="https://wa.me/77022645778?text=Привет!%20Хочу%20узнать%20подробнее%20про%20Био-Трекер" class="btn btn-primary" style="display: block; max-width: 500px; margin: 0 auto; font-size: 1.25rem; padding: 1.25rem 2.5rem;" onclick="if(typeof fbq !== 'undefined') fbq('track', 'Contact', {content_name: 'Био-Трекер'});">Забронировать место в Био-Трекере</a>
         </div>
     </section>
 
@@ -762,6 +781,12 @@
             const name = formData.get('name');
             const phone = formData.get('phone');
             const message = `Привет! Меня зовут ${name}. Хочу получить разбор моей ситуации.`;
+            
+            // Отправляем событие Lead в Meta Pixel
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
+            
             window.location.href = `https://wa.me/77022645778?text=${encodeURIComponent(message)}`;
         });
 
